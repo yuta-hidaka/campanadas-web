@@ -3,288 +3,155 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f7f9fc">
+<meta name="theme-color" content="#f6f8fb">
 <title>投資比較 2026</title>
 <style>
-:root {
-  --ink:#17212b; --ink-2:#2a3a4d; --muted:#687687; --line:#dfe6ee;
-  --bg:#f5f7fa; --card:#ffffff; --soft:#f8fafc; --blue:#345d8c;
-  --green:#19724b; --orange:#a96613; --red:#a63d3d;
-  --radius:16px; --shadow:0 12px 32px rgba(20,33,61,.07);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;background:var(--bg)}
-body{font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif;color:var(--ink);margin:0;background:var(--bg);font-size:15px;line-height:1.72;-webkit-text-size-adjust:100%}
-a{color:#245e9d;text-decoration-thickness:1px;text-underline-offset:2px;overflow-wrap:anywhere}
-.topnav-wrap{position:sticky;top:0;z-index:50;background:rgba(245,247,250,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,230,238,.92)}
-.topnav{max-width:1080px;margin:auto;display:flex;gap:8px;overflow-x:auto;padding:10px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.topnav::-webkit-scrollbar{display:none}
-.topnav a{flex:0 0 auto;text-decoration:none;color:var(--ink-2);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:700;white-space:nowrap}
-.report{max-width:1080px;margin:22px auto 54px;padding:0 16px}
-.page{background:var(--card);padding:38px;margin:0 0 22px;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(223,230,238,.8);scroll-margin-top:72px}
-h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:0 0 18px;letter-spacing:-1.2px;color:#13213a}
-h2{font-size:clamp(21px,3vw,28px);line-height:1.25;margin:0 0 18px;color:#14213d;border-bottom:2px solid #e3e9f0;padding-bottom:10px;letter-spacing:-.35px}
-h3{font-size:17px;line-height:1.35;margin:0 0 8px;color:#26364a}
-p{margin:0 0 14px}.small{font-size:12px;color:#5e6b78;line-height:1.55}.muted{color:var(--muted)}
-.tag{display:inline-block;padding:5px 9px;border-radius:999px;background:#eef2f6;margin:0 5px 5px 0;font-size:12px;font-weight:800}
-.tag.green{background:#e6f6ee;color:#176445}.tag.orange{background:#fff1dd;color:#8b5600}.tag.red{background:#fde8e8;color:#9b2c2c}.tag.blue{background:#e8f0ff;color:#244d9b}
-.hero{background:linear-gradient(135deg,#f7fafe,#eef4fb);border:1px solid #dbe3ec;border-radius:14px;padding:clamp(22px,4vw,40px);margin-bottom:28px}
-.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.card{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fff;min-width:0}.card.soft{background:var(--soft)}
-.callout{border-left:4px solid #4a6fa5;background:#f4f7fb;padding:16px 18px;border-radius:8px;margin:18px 0}.callout.warn{border-left-color:#c9791a;background:#fff8ee}.callout.red{border-left-color:#b94343;background:#fff4f4}
-.big{font-size:28px;font-weight:800;color:#14213d}.kpi{font-size:clamp(25px,4vw,34px);font-weight:800;color:#23395d;line-height:1.15}.kpi-sub{font-size:12px;color:#66717c}
-.table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
-table{width:100%;border-collapse:collapse;margin:10px 0 18px;min-width:680px}th{background:#eef3f8;color:#26364a;text-align:left;font-size:13px;padding:11px 10px;border-bottom:1px solid #cfd8e3}td{padding:12px 10px;vertical-align:top;border-bottom:1px solid #e4e9ef;font-size:13px}tr:last-child td{border-bottom:none}.product{font-weight:800;color:#14213d;white-space:nowrap}.yes{font-weight:800;color:var(--green)}.no{font-weight:800;color:var(--red)}
-.flow{display:flex;align-items:stretch;gap:8px;margin:14px 0 20px}.flowbox{flex:1;border:1px solid #d9e1ea;border-radius:10px;padding:13px;background:#fafbfd;text-align:center;font-size:13px;min-width:0}.arrow{align-self:center;color:#7c8997;font-weight:800;font-size:20px}
-.bar-row{display:grid;grid-template-columns:minmax(120px,180px) minmax(100px,1fr) 64px;gap:10px;align-items:center;margin:10px 0;font-size:13px}.bar-bg{height:18px;background:#eef2f6;border-radius:999px;overflow:hidden}.bar{height:100%;border-radius:999px;background:#4e6f95}.bar.orange{background:#bb7a24}
-.case{border-left:4px solid #77889a;padding:15px 17px;background:#f8fafc;margin-bottom:12px;border-radius:7px}.case strong{color:#14213d}.footer{margin-top:22px;font-size:11px;color:#7d8792;border-top:1px solid #e2e7ed;padding-top:12px}ul{margin:8px 0 16px;padding-left:21px}li{margin:7px 0}.source{font-size:12px;margin:10px 0;line-height:1.55;overflow-wrap:anywhere}.num{display:inline-flex;width:24px;height:24px;align-items:center;justify-content:center;border-radius:50%;background:#23395d;color:#fff;font-size:12px;font-weight:800;margin-right:7px}
-@media(max-width:760px){
-  html{background:#fff}.topnav-wrap{background:rgba(255,255,255,.94)}.report{margin:0;padding:0}.page{padding:26px 16px;margin:0;border-radius:0;box-shadow:none;border:0;border-bottom:10px solid #f2f5f8}.hero{padding:22px 18px;margin-bottom:24px}.grid2,.grid3{grid-template-columns:1fr}.flow{flex-direction:column}.arrow{transform:rotate(90deg);align-self:center;height:20px;line-height:20px}
-  h1{font-size:31px}.small{font-size:12px}.card{padding:16px}.callout{padding:14px 15px}.bar-row{grid-template-columns:minmax(92px,1fr) minmax(75px,1.4fr) 54px;gap:8px}.bar-bg{height:14px}
-  table{display:block;min-width:0;border-collapse:separate;margin:8px 0 18px}thead{display:none}tbody{display:block}tr{display:block;border:1px solid var(--line);border-radius:12px;margin:0 0 12px;padding:7px 12px;background:#fff;box-shadow:0 4px 16px rgba(20,33,61,.035)}td{display:grid;grid-template-columns:minmax(92px,34%) 1fr;gap:10px;width:100%;padding:9px 0;border-bottom:1px solid #edf1f5;font-size:13px;white-space:normal}td:last-child{border-bottom:0}td::before{content:attr(data-label);font-size:11px;color:#6b7785;font-weight:800;line-height:1.4}.product{white-space:normal}.source{font-size:11.5px}
-}
-@media(max-width:380px){.page{padding-left:13px;padding-right:13px}.topnav{padding-left:10px;padding-right:10px}.bar-row{grid-template-columns:86px minmax(65px,1fr) 48px;gap:6px;font-size:12px}td{grid-template-columns:84px 1fr}}
-@media print{.topnav-wrap{display:none}.report{max-width:none;margin:0;padding:0}.page{box-shadow:none;border:none;border-radius:0;page-break-after:always;margin:0;padding:12mm 13mm}.page:last-child{page-break-after:auto}body{background:#fff}.grid2{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:repeat(3,1fr)}table{min-width:0}}
+:root{--ink:#17212b;--muted:#657384;--line:#dce4ed;--bg:#f6f8fb;--card:#fff;--head:#eef3f8;--blue:#275f9f;--green:#19724b;--red:#a63d3d;--amber:#996017;--radius:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.55;-webkit-text-size-adjust:100%}
+a{color:var(--blue);text-underline-offset:2px;overflow-wrap:anywhere}
+main{max-width:1240px;margin:0 auto;padding:22px 16px 52px}
+.hero{background:linear-gradient(135deg,#fff,#eef4fa);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:16px}
+h1{font-size:clamp(26px,4.6vw,42px);line-height:1.08;margin:0 0 10px;letter-spacing:-.8px;color:#13213a}
+h2{font-size:20px;margin:0 0 12px;color:#172b46}.sub{color:var(--muted);margin:0}.note{font-size:12px;color:var(--muted);margin:8px 0 0}.mobile-hint{display:none;font-size:12px;color:var(--muted);margin:0 0 8px}
+.section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin:0 0 16px;box-shadow:0 8px 28px rgba(25,40,65,.045)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:#fff}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:1080px;font-size:13px}
+th,td{padding:11px 12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+th:last-child,td:last-child{border-right:0}tr:last-child td{border-bottom:0}
+thead th{position:sticky;top:0;z-index:4;background:var(--head);font-weight:800;color:#26364a;white-space:nowrap}
+thead th:first-child{left:0;z-index:6}
+tbody th{position:sticky;left:0;z-index:3;background:#f8fafc;min-width:150px;font-weight:800;color:#26364a}
+.good{color:var(--green);font-weight:800}.bad{color:var(--red);font-weight:800}.warn{color:var(--amber);font-weight:800}.strong{font-weight:800;color:#14213d}.soft{color:var(--muted);font-size:11px}.nowrap{white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}.pill{font-size:11px;font-weight:800;padding:5px 9px;border-radius:999px;background:#edf2f7}.pill.green{background:#e6f6ee;color:#176445}.pill.red{background:#fdeaea;color:#963737}.pill.amber{background:#fff2df;color:#87520c}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}.summary div{border:1px solid var(--line);border-radius:10px;padding:12px;background:#fafbfd}.summary b{display:block;font-size:12px;color:#526273;margin-bottom:3px}.summary span{font-size:15px;font-weight:800;color:#172b46}
+details{border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 14px;margin-top:10px}summary{cursor:pointer;font-weight:800;padding:12px 0;color:#26364a}.sources{padding:0 0 12px;font-size:12px;color:#506070}.sources div{margin:8px 0}
+footer{font-size:11px;color:#7b8794;margin-top:16px;text-align:center}
+@media(max-width:760px){main{padding:0 0 32px}.hero,.section{border-radius:0;border-left:0;border-right:0;margin-bottom:10px;box-shadow:none}.hero{padding:22px 16px}.section{padding:17px 12px}h1{font-size:29px}.mobile-hint{display:block}.summary{grid-template-columns:1fr 1fr}.table-scroll{border-radius:10px}table{font-size:12px;min-width:980px}th,td{padding:9px 10px}tbody th{min-width:124px}.section h2{font-size:18px}}
+@media(max-width:390px){.summary{grid-template-columns:1fr}.hero{padding-left:13px;padding-right:13px}.section{padding-left:10px;padding-right:10px}}
+@media print{body{background:#fff}main{max-width:none;padding:0}.hero,.section{box-shadow:none;break-inside:avoid}.table-scroll{overflow:visible}table{min-width:0;font-size:9px}th,td{padding:5px 6px}thead th,tbody th{position:static}}
 </style>
 </head>
 <body>
-<div class="topnav-wrap"><nav class="topnav" aria-label="セクションナビゲーション">
-<a href="#overview">概要</a><a href="#indices">インデックス</a><a href="#dubai">Dubai Investor</a><a href="#cases">類似事例</a><a href="#checklist">確認項目</a><a href="#sources">出典</a>
-</nav></div><main class="report">
-
-<section class="page" id="overview">
-  <div class="hero">
-    <div class="small" style="font-weight:700; letter-spacing:.5px; color:#4b6380;">INVESTMENT COMPARISON / 2026-09-28</div>
+<main>
+  <section class="hero">
+    <div class="soft strong" style="letter-spacing:.5px">INVESTMENT COMPARISON / 2026-09-28</div>
     <h1>オルカン / S&amp;P500 / FANG+ / 3倍S&amp;P500 / Dubai Investor</h1>
-    <p style="font-size:12pt; margin-bottom:4mm;">リターンだけでなく、<b>何のリスクを取っているのか</b>を同じ表で見る。</p>
-    <span class="tag green">NISA</span><span class="tag blue">分散</span><span class="tag orange">レバレッジ</span><span class="tag red">信用・流動性</span>
-  </div>
-
-  <h2>最初に押さえること</h2>
-  <div class="grid3">
-    <div class="card"><div class="big">①</div><h3>インデックス</h3><p>主なリスクは市場価格の下落。毎日値段が見え、売却経路が明確。</p></div>
-    <div class="card"><div class="big">②</div><h3>3倍レバ</h3><p>市場リスクに加えて、日次リセットと経路依存性が乗る。「長期で3倍」ではない。</p></div>
-    <div class="card"><div class="big">③</div><h3>Dubai Investor</h3><p>市場価格のブレが見えにくい代わりに、信用・換金・法域・資金フローのリスクが重要。</p></div>
-  </div>
-
-  <div class="callout" style="margin-top:5mm;">
-    <b>要点：</b>「値動きが小さく見える」ことと「安全」は別物。非上場・私募型では、日々の価格変動の代わりに、信用イベントや出金停止でリスクが一気に表面化することがある。
-  </div>
-
-  <h2 style="margin-top:5mm;">比較表</h2>
-  <table>
-    <thead><tr><th>商品</th><th>NISA</th><th>分散 / 集中</th><th>換金性</th><th>主なリスク</th><th>参考リターン</th></tr></thead>
-    <tbody>
-      <tr><td class="product">オルカン</td><td class="yes">○ 両枠</td><td>世界約2,458銘柄<br><span class="small">MSCI ACWI</span></td><td>高い</td><td>世界株式市場の下落、為替</td><td>10年ベンチマーク <b>3.2倍</b><br><span class="small">2015/6-2025/6、円換算・配当込</span></td></tr>
-      <tr><td class="product">S&amp;P500</td><td class="yes">○ 両枠</td><td>米国大型株約500社</td><td>高い</td><td>米国集中、株価下落、為替</td><td>10年ベンチマーク <b>4.2倍</b><br><span class="small">同期間・円換算・配当込</span></td></tr>
-      <tr><td class="product">FANG+</td><td class="yes">○ 両枠</td><td>大型成長株10社・均等</td><td>高い</td><td>超集中、成長株バリュエーション</td><td><b>年率27.41%</b><br><span class="small">2014/9-2026/6、ICE指数・総合収益。指数開始前はバックテスト</span></td></tr>
-      <tr><td class="product">SPXL<br><span class="small">S&amp;P500 3倍</span></td><td class="no">×</td><td>S&amp;P500への日次3倍</td><td>高い</td><td>レバレッジ、経路依存、ボラティリティ減価</td><td><b>10年年率29.18%</b><br><span class="small">2026/8末、SPXL NAV実績</span></td></tr>
-      <tr><td class="product">Dubai Investor</td><td class="no">×</td><td>AIX社債等へ集中度が高い構造</td><td>契約依存</td><td>信用、換金、法域、運営、資金フロー</td><td><b>想定年利9%</b><br><span class="small">シミュレーション値・保証なし</span></td></tr>
-    </tbody>
-  </table>
-  <p class="small">※ リターンの期間・指数・通貨・配当処理が異なるため、数値だけの単純比較は不可。過去実績は将来を保証しない。NISAの取扱いは販売会社で最終確認。</p>
-  <div class="footer">資料作成日 2026-09-28 / 公開情報ベース。個別の投資助言ではなく、比較・デューデリジェンス用。</div>
-</section>
-
-<section class="page" id="indices">
-  <h2>1. インデックス3種と3倍レバ：同じ「株式」でも中身は違う</h2>
-
-  <div class="grid2">
-    <div class="card soft">
-      <h3>オルカン：リスク源が最も単純</h3>
-      <p>MSCI ACWIは先進国・新興国の大型/中型株を広くカバーし、世界の投資可能株式市場のおよそ85%を対象。2026年8月末で2,458銘柄。</p>
-      <p><b>指数の最大ドローダウン：</b> -58.38%（2007/10-2009/3）。広く分散しても株式なので大暴落はある。</p>
+    <p class="sub">利回りだけでなく、NISA・分散・換金性・最大損失の出方・追加リスクを横並びで比較。</p>
+    <div class="summary">
+      <div><b>NISAで買える</b><span>オルカン / S&amp;P500 / FANG+</span></div>
+      <div><b>NISA対象外</b><span>SPXL / Dubai Investor</span></div>
+      <div><b>市場で即売却</b><span>上場・公募商品側</span></div>
+      <div><b>信用・換金リスク追加</b><span>Dubai Investor側</span></div>
     </div>
-    <div class="card soft">
-      <h3>S&amp;P500：米国への集中</h3>
-      <p>オルカンより地域集中が強い。S&amp;P DJIの2026年8月末データでは、過去10年の価格リターン年率は13.48%、年率リスクは15.35%。</p>
-      <p>日本の円換算・配当込みベンチマークでは2015/6-2025/6の10年間で4.2倍。</p>
+  </section>
+
+  <section class="section">
+    <h2>① 5商品の比較表</h2>
+    <p class="mobile-hint">← 横にスワイプして比較 →</p>
+    <div class="table-scroll" role="region" aria-label="5商品の比較表" tabindex="0">
+      <table>
+        <thead>
+          <tr><th>比較項目</th><th>オルカン</th><th>S&amp;P500</th><th>FANG+</th><th>SPXL<br><span class="soft">S&amp;P500 3倍</span></th><th>Dubai Investor</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>NISA</th><td class="good">○ つみたて / 成長</td><td class="good">○ つみたて / 成長</td><td class="good">○ つみたて / 成長</td><td class="bad">×</td><td class="bad">×</td></tr>
+          <tr><th>投資対象</th><td>世界株式 約2,458銘柄</td><td>米国大型株 約500社</td><td>大型成長株 10社・均等</td><td>S&amp;P500の日次値動きの約3倍</td><td>AIX社債等を中心とする私募・海外スキーム</td></tr>
+          <tr><th>分散度</th><td class="good">非常に高い</td><td class="good">高い</td><td class="warn">低い / 超集中</td><td class="warn">銘柄分散はS&amp;P500だがレバ3倍</td><td class="warn">発行体・運営主体への集中度が高い</td></tr>
+          <tr><th>換金性</th><td class="good">高い</td><td class="good">高い</td><td class="good">高い</td><td class="good">高い</td><td class="bad">契約・相手方の支払能力に依存</td></tr>
+          <tr><th>価格透明性</th><td class="good">高い</td><td class="good">高い</td><td class="good">高い</td><td class="good">高い</td><td class="warn">上場商品より低い</td></tr>
+          <tr><th>参考リターン</th><td><span class="strong">10年 約3.2倍</span><br><span class="soft">2015/6–2025/6、円換算・配当込ベンチマーク</span></td><td><span class="strong">10年 約4.2倍</span><br><span class="soft">同期間、円換算・配当込ベンチマーク</span></td><td><span class="strong">年率27.41%</span><br><span class="soft">2014/9–2026/6 ICE指数。開始前はバックテスト含む</span></td><td><span class="strong">10年年率29.18%</span><br><span class="soft">2026/8末 SPXL NAV実績</span></td><td><span class="strong">想定年利9%</span><br><span class="soft">シミュレーション値・保証なし</span></td></tr>
+          <tr><th>大きな損失の出方</th><td>世界株暴落時にNAVが大きく下落</td><td>米国株暴落時にNAVが大きく下落</td><td>成長株の急落で大きく下がりやすい</td><td class="bad">急落＋日次3倍＋経路依存で損失が加速</td><td class="bad">日々の価格変動より、信用イベント・償還遅延・出金停止で表面化し得る</td></tr>
+          <tr><th>主な追加リスク</th><td>為替・株式市場</td><td>米国集中・為替</td><td>10社集中・高バリュエーション</td><td>レバレッジ・ボラティリティ減価・日次リセット</td><td>信用・流動性・運営・法域・関連会社・資金フロー</td></tr>
+          <tr><th>構造の複雑さ</th><td class="good">低い</td><td class="good">低い</td><td class="good">低い</td><td class="warn">中</td><td class="bad">高い</td></tr>
+          <tr><th>リスクが見える頻度</th><td>毎営業日</td><td>毎営業日</td><td>毎営業日</td><td>毎営業日</td><td>市場価格より契約・支払状況・開示で判断</td></tr>
+        </tbody>
+      </table>
     </div>
-    <div class="card soft">
-      <h3>FANG+：10銘柄に意図的に集中</h3>
-      <p>NYSE FANG+は成長株10社を均等配分。ICEによれば2014/9/19-2026/6/30の年率総合収益は27.41%。ただし指数開始は2017年で、それ以前はバックテスト。</p>
-      <p>NISAではiFreeNEXT FANG+インデックスが、つみたて投資枠・成長投資枠の両方に対応。</p>
+    <div class="legend"><span class="pill green">透明性 / 流動性が高い</span><span class="pill amber">集中・複雑性あり</span><span class="pill red">信用・換金など相手方依存</span></div>
+    <p class="note">※ 期間・指数・通貨・配当処理が異なるため、リターン数値だけの単純比較は不可。過去実績は将来を保証しません。</p>
+  </section>
+
+  <section class="section">
+    <h2>② Dubai Investorで追加されるリスク</h2>
+    <p class="mobile-hint">← 横にスワイプ →</p>
+    <div class="table-scroll" role="region" aria-label="Dubai Investor追加リスク表" tabindex="0">
+      <table style="min-width:860px">
+        <thead><tr><th>論点</th><th>公開資料から確認できる内容</th><th>インデックス商品との違い</th><th>確認したい資料</th></tr></thead>
+        <tbody>
+          <tr><th>資金配分</th><td>ADIF資料では出資金の<span class="strong">50%以上</span>をAIX社債へ。残余は広告宣伝費・営業活動費・管理コスト等。</td><td>投資家資金のほぼ全額が市場性資産へ直結する一般的なインデックス投信とは構造が異なる。</td><td>各期の実際のAIX投資比率、販管費率、関連当事者取引</td></tr>
+          <tr><th>9%の原資</th><td>AIX社債の収益源として不動産・都市開発、VC、コモディティ、FX、暗号資産等を説明。</td><td>株価上昇・配当という単純な収益源ではなく、複数事業と発行体の信用に依存。</td><td>社債クーポン、発行体、満期、担保、優先順位、監査済財務</td></tr>
+          <tr><th>換金</th><td>市場で自由に売却する商品ではなく、契約条件と相手方の支払能力に依存。</td><td>上場ETF・公募投信より流動性リスクが大きい。</td><td>解約条項、ゲート、償還期限、遅延時の権利</td></tr>
+          <tr><th>遅延情報</th><td>AIXは2026/9/15声明でドバイ業務の一部遅延を認めつつ、ADIFは影響を受けていないと説明。</td><td>価格下落ではなく、支払・事務・信用イベントの形で表れる可能性。</td><td>独立監査、銀行/カストディ残高、実際の償還履歴</td></tr>
+          <tr><th>法的な返還義務</th><td>日本法人・合同会社・パナマ法人・AIXなど複数主体が登場。</td><td>損失時に「誰に請求できるか」が上場商品より重要。</td><td>契約書上の最終返還義務者・準拠法・裁判管轄</td></tr>
+        </tbody>
+      </table>
     </div>
-    <div class="card soft">
-      <h3>SPXL：日次+300%であって長期3倍ではない</h3>
-      <p>Direxion自身が「1日を超える期間でベンチマークの累積リターンの3倍を期待すべきではない」と明示。</p>
-      <p>2026年8月末までの10年NAV年率は29.18%だったが、これは強い上昇相場を含む過去実績。</p>
+    <p class="note">単純化すると、AIX社債へ50%しか投資されず残余が収益を生まない仮定では、全体9%を出すために投資部分で18%が必要。実際の収益構造は契約書・社債条件の確認が必要です。</p>
+  </section>
+
+  <section class="section">
+    <h2>③ 類似する海外・高利回りスキームの失敗事例</h2>
+    <p class="mobile-hint">← 横にスワイプ →</p>
+    <div class="table-scroll" role="region" aria-label="類似失敗事例の比較表" tabindex="0">
+      <table style="min-width:980px">
+        <thead><tr><th>事例</th><th>売り文句 / 構造</th><th>何が起きたか</th><th>比較上の学び</th></tr></thead>
+        <tbody>
+          <tr><th>MRI International</th><td>米国の医療売掛債権へ投資すると説明。日本人投資家を大量勧誘。</td><td>DOJは<span class="strong">15億ドル規模のPonzi scheme</span>と認定。裁判資料では医療債権購入に使われた資金は2%未満。</td><td>「実体資産がある」という説明より、第三者保管・監査・資金使途の検証が重要。</td></tr>
+          <tr><th>Exential Group</th><td>ドバイのFX投資。高利回りを訴求。</td><td>約7,000人、約11億ディルハム規模のPonzi事件として裁判化。支払い停止。</td><td>運用口座・ブローカー・監査証跡を独立確認する必要。</td></tr>
+          <tr><th>BlueChip</th><td>最低1万ドル、18か月ロック、<span class="strong">月3%</span>を提示。</td><td>2024年に支払い停止。事務所が空になったと報道され、捜査へ。</td><td>豪華なオフィス・受賞歴・露出と、資産の分別管理・換金能力は別物。</td></tr>
+          <tr><th>Abraaj</th><td>ドバイ拠点の大手PE。機関投資家も参加。</td><td>SECがファンド資金流用・企業資金との混同等で提訴。</td><td>大手・著名・機関投資家参加でも、非上場資産ではガバナンスとキャッシュ管理が核心。</td></tr>
+        </tbody>
+      </table>
     </div>
-  </div>
+    <p class="note">※ これらの事件とADIF/AIXが同じ不正を行っている、または破綻すると示すものではありません。比較しているのは、海外・非上場・高利回り・運営会社依存・換金が相手方依存という故障モードです。</p>
+  </section>
 
-  <h2 style="margin-top:5mm;">3倍レバの経路依存を2日で見る</h2>
-  <div class="grid2">
-    <div class="card">
-      <h3>通常指数</h3>
-      <div class="kpi">100 → 90 → 99</div>
-      <p class="kpi-sub">1日目 -10%、2日目 +10% = 累計 -1%</p>
+  <section class="section">
+    <h2>④ 最低限見るべき6項目</h2>
+    <div class="table-scroll" role="region" aria-label="確認項目" tabindex="0">
+      <table style="min-width:820px">
+        <thead><tr><th>#</th><th>確認項目</th><th>見るポイント</th></tr></thead>
+        <tbody>
+          <tr><th>1</th><td class="strong">返還義務者</td><td>元本・分配金を法的に誰が支払う契約か。</td></tr>
+          <tr><th>2</th><td class="strong">AIX社債条件</td><td>発行体、クーポン、満期、通貨、担保、優先順位、デフォルト条項。</td></tr>
+          <tr><th>3</th><td class="strong">資金の実在</td><td>監査済財務、銀行/カストディ証明、社債保有残高。</td></tr>
+          <tr><th>4</th><td class="strong">実際の投資比率</td><td>「50%以上」が50%なのか90%なのか。各期実績と販管費率。</td></tr>
+          <tr><th>5</th><td class="strong">解約・償還</td><td>ゲート、延期条項、手数料、評価方法、支払期限。</td></tr>
+          <tr><th>6</th><td class="strong">ストレス時</td><td>AIX支払い停止時に誰が損失を負担し、何を請求できるか。</td></tr>
+        </tbody>
+      </table>
     </div>
-    <div class="card">
-      <h3>日次3倍</h3>
-      <div class="kpi">100 → 70 → 91</div>
-      <p class="kpi-sub">1日目 -30%、2日目 +30% = 累計 -9%</p>
-    </div>
-  </div>
-  <div class="callout warn"><b>つまり：</b>方向が最終的に戻っても、上下動が大きいほど3倍ETFは削られやすい。長期保有では「レバレッジ倍率」だけでなく、値動きの順序が結果を左右する。</div>
+  </section>
 
-  <h2 style="margin-top:5mm;">NISAだけで「かなり攻める」選択肢は存在する</h2>
-  <p>オルカン → S&amp;P500 → FANG+ と、NISA内でも分散度を下げて成長株への集中度を上げられる。一方、ヘッジ目的以外のデリバティブを用いる高レバレッジ型投信等はNISAの対象外。</p>
-  <div class="footer">出典：MSCI, S&amp;P Dow Jones Indices, ICE, Direxion, 大和アセットマネジメント, 三菱UFJアセットマネジメント, 金融庁。</div>
-</section>
+  <section class="section">
+    <h2>出典</h2>
+    <details>
+      <summary>一次資料・規制当局・指数提供会社・報道を表示</summary>
+      <div class="sources">
+        <div>[1] ADIF JAPAN Asset Management — <a href="https://www.adif.co.jp/" target="_blank" rel="noopener">https://www.adif.co.jp/</a></div>
+        <div>[2] ADIF「投資事業スキームに関する検証レポート」2026-03-24 — <a href="https://dwgkpr9vzw3bh.cloudfront.net/jphf/1774341123011467800.pdf" target="_blank" rel="noopener">PDF</a></div>
+        <div>[3] ADIF / AIX 公式声明 2026-09-18 / 09-15 — <a href="https://dwgkpr9vzw3bh.cloudfront.net/adif/1789725844089860900.pdf" target="_blank" rel="noopener">PDF</a></div>
+        <div>[4] THE GOLD ONLINE フェス 2026 summer — <a href="https://goldonline.co.jp/fes_2026summer/exhibitors/booth-14/" target="_blank" rel="noopener">ADIFブース</a></div>
+        <div>[5] 金融庁 — <a href="https://www.fsa.go.jp/ordinary/chuui/syainnken.html" target="_blank" rel="noopener">合同会社等の社員権の取得勧誘にご注意ください</a></div>
+        <div>[6] 金融庁 — <a href="https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf" target="_blank" rel="noopener">NISA制度資料</a></div>
+        <div>[7] 三菱UFJアセットマネジメント — <a href="https://emaxis.am.mufg.jp/lp/slim/pr3/" target="_blank" rel="noopener">eMAXIS Slim比較</a></div>
+        <div>[8] MSCI — <a href="https://www.msci.com/indexes/index/892400/msci-acwi-index" target="_blank" rel="noopener">MSCI ACWI Index</a></div>
+        <div>[9] S&amp;P Dow Jones Indices — <a href="https://www.spglobal.com/spdji/en/indices/equity/sp-500/" target="_blank" rel="noopener">S&amp;P 500</a></div>
+        <div>[10] ICE — <a href="https://www.ice.com/equity-derivatives/fangplus" target="_blank" rel="noopener">NYSE FANG+ Index</a></div>
+        <div>[11] 大和アセットマネジメント — <a href="https://www.daiwa-am.co.jp/funds/detail/3346/detail_top.html" target="_blank" rel="noopener">iFreeNEXT FANG+</a></div>
+        <div>[12] Direxion — <a href="https://www.direxion.com/product/daily-sp-500-bull-bear-3x-etfs" target="_blank" rel="noopener">SPXL</a></div>
+        <div>[13] U.S. SEC — <a href="https://www.sec.gov/newsroom/press-releases/2013-201" target="_blank" rel="noopener">MRI International</a></div>
+        <div>[14] U.S. DOJ — <a href="https://www.justice.gov/archives/opa/pr/president-and-ceo-las-vegas-investment-company-sentenced-50-years-prison-running-15-billion" target="_blank" rel="noopener">MRI CEO sentencing</a></div>
+        <div>[15] Gulf News — <a href="https://gulfnews.com/uae/unveiled-anatomy-of-exentials-forex-rip-off-court-orders-company-to-pay-investors-1.2006537" target="_blank" rel="noopener">Exential</a></div>
+        <div>[16] Khaleej Times — <a href="https://www.khaleejtimes.com/uae/uae-investors-left-in-lurch-as-company-owner-staff-disappear-with-millions" target="_blank" rel="noopener">BlueChip</a></div>
+        <div>[17] U.S. SEC — <a href="https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24449" target="_blank" rel="noopener">Abraaj</a></div>
+      </div>
+    </details>
+    <p class="note">公開情報ベースの比較・デューデリジェンス用資料。個別の投資判断は正式な契約書・目論見書等で確認してください。</p>
+  </section>
 
-<section class="page" id="dubai">
-  <h2>2. Dubai Investor：公開資料から見える資金フロー</h2>
-
-  <div class="callout">
-    ADIF JAPANアセットマネジメントは金融商品取引業者として <b>関東財務局長（金商）第1877号</b>（第二種金融商品取引業、投資助言・代理業）を掲示している。<br>
-    ただし、金融庁は一般論として「登録業者であることは信用力等の保証ではない」と説明している。
-  </div>
-
-  <div class="flow">
-    <div class="flowbox"><b>日本の投資家</b><br>出資</div><div class="arrow">→</div>
-    <div class="flowbox"><b>ADIF側スキーム</b><br>合同会社社員権等</div><div class="arrow">→</div>
-    <div class="flowbox"><b>ASTRONOMIC<br>ENTERPRISES INC</b><br>パナマ法人</div><div class="arrow">→</div>
-    <div class="flowbox"><b>AIX Investment Group</b><br>社債</div>
-  </div>
-
-  <div class="grid2">
-    <div class="card">
-      <h3>ADIFの2026年3月資料に書かれていること</h3>
-      <ul>
-        <li>出資金の<b>50%以上</b>を、パナマ法人を通じてAIX社債へ投資。</li>
-        <li>残りは株式会社テクノサポートへ送金し、<b>広告宣伝費・営業活動費・管理コスト等</b>に使用。</li>
-        <li>AIX社債の利金源泉として、不動産・都市開発、ベンチャー、コモディティ、FX、暗号資産等を挙げる。</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>2026年9月のAIX公式声明</h3>
-      <p>AIXは9月15日の公式声明で、<b>ドバイの業務に限定した「一部の遅延」</b>があったと認め、強化されたコンプライアンス手続きが原因と説明。</p>
-      <p>同時に、<b>ADIFはこの措置の影響を受けていない</b>と説明している。これはAIX/ADIF側の公式説明であり、独立監査による検証とは別。</p>
-    </div>
-  </div>
-
-  <h2 style="margin-top:5mm;">「想定9%」と「50%以上を投資」の算数</h2>
-  <p>単純化して、AIX社債に投じた部分だけが運用益を生み、残余資金は収益を生まないと仮定する。全出資額に対して9%を生むために、投資部分に必要な利回りは次の通り。</p>
-
-  <div class="bar-row"><div>AIX社債へ50%</div><div class="bar-bg"><div class="bar orange" style="width:100%"></div></div><div><b>18.0%</b></div></div>
-  <div class="bar-row"><div>60%</div><div class="bar-bg"><div class="bar orange" style="width:83.3%"></div></div><div><b>15.0%</b></div></div>
-  <div class="bar-row"><div>70%</div><div class="bar-bg"><div class="bar orange" style="width:71.4%"></div></div><div><b>12.9%</b></div></div>
-  <div class="bar-row"><div>80%</div><div class="bar-bg"><div class="bar orange" style="width:62.5%"></div></div><div><b>11.25%</b></div></div>
-  <div class="bar-row"><div>90%</div><div class="bar-bg"><div class="bar orange" style="width:55.6%"></div></div><div><b>10.0%</b></div></div>
-  <div class="bar-row"><div>100%</div><div class="bar-bg"><div class="bar orange" style="width:50%"></div></div><div><b>9.0%</b></div></div>
-
-  <p class="small">計算式：9% ÷ AIX社債への投資比率。これは実際の契約収益を示すものではなく、「残余資金が収益を生まない」という単純仮定での必要利回り。実際には社債クーポン、販売費、手数料、内部収益、税務、償還条件を契約書で確認する必要がある。</p>
-
-  <div class="callout red"><b>ここが最大の確認ポイント：</b> AIX社債の正確な発行体、クーポン、満期、担保・優先順位、監査済み残高、ADIF投資家に対する最終的な返還義務者、途中解約時の価格決定方法。</div>
-  <div class="footer">ADIFの説明をそのまま「安全性の証明」とは扱わず、資金フローの一次資料として利用している。</div>
-</section>
-
-<section class="page" id="cases">
-  <h2>3. 類似する失敗事例：何が「似ている」のか</h2>
-  <div class="callout warn"><b>重要：</b>以下はADIF/AIXが同じ不正を行っている、または破綻すると示すものではない。比較しているのは、<b>海外・非上場・高利回り・運用会社依存・換金が相手方依存</b>という「失敗時の構造」です。</div>
-
-  <div class="case">
-    <strong>MRI International（米国 / 日本人投資家中心）</strong><br>
-    SECによると、日本在住者を中心に8億ドル超を集め、「米国の医療売掛債権を割安で買う」と説明。DOJの刑事事件では<b>15億ドル規模のPonzi scheme</b>とされ、1万人超の日本人被害者から10億ドル超を勧誘。裁判資料では、医療債権購入に使われたのは投資資金の2%未満とされた。CEOは2019年に懲役50年。<br>
-    <span class="small"><b>学び：</b>「具体的な実体資産がある」という説明だけでは、実際の資金使途を保証しない。第三者保管・監査・銀行残高の検証が重要。</span>
-  </div>
-
-  <div class="case">
-    <strong>Exential Group（ドバイ / FX）</strong><br>
-    Gulf Newsによると、最低2.5万ドルの口座で年率最大120%をうたい、約7,000人の顧客を集めた。後に約11億ディルハム規模のPonzi schemeとして裁判になり、支払い停止が表面化。<br>
-    <span class="small"><b>学び：</b>高利回りと「安全な運用」を同時に強調する商品は、収益源・ブローカー口座・監査証跡を独立確認する必要がある。</span>
-  </div>
-
-  <div class="case">
-    <strong>BlueChip（ドバイ / 2024年に支払い停止）</strong><br>
-    Khaleej Timesによると、最低1万ドル・18か月ロック・月3%（年36%相当）を提示。2024年3月に支払いが止まり、事務所が空になったと報道。後の報道では警察捜査・関係者の逮捕へ発展。<br>
-    <span class="small"><b>学び：</b>豪華なオフィス、受賞歴、著名人との露出、長い営業実績の見せ方は、資産の分別管理や換金能力とは別物。</span>
-  </div>
-
-  <div class="case">
-    <strong>Abraaj（ドバイ / 大手プライベートエクイティ）</strong><br>
-    SECは2019年、Dubai-basedのAbraaj Investment Managementと創業者を、ヘルスケアファンド資金の流用・企業資金との混同等で提訴。対象は<b>1億ドル超</b>の米国慈善団体等の資金。<br>
-    <span class="small"><b>学び：</b>「大手」「機関投資家も利用」「著名な実績」があっても、非上場資産では資金の分別・ガバナンス・キャッシュ管理が核心。</span>
-  </div>
-
-  <h2 style="margin-top:4mm;">共通する故障モード</h2>
-  <table>
-    <thead><tr><th>故障モード</th><th>上場インデックス</th><th>私募・海外スキーム</th></tr></thead>
-    <tbody>
-      <tr><td>損失の見え方</td><td>価格下落として毎日見える</td><td>平常時は安定して見え、出金停止・信用イベントで急に表面化し得る</td></tr>
-      <tr><td>資金の所在</td><td>ファンド/カストディ構造が標準化</td><td>複数法人・法域・関連会社をまたぐ場合がある</td></tr>
-      <tr><td>換金</td><td>市場で売却</td><td>契約・運営会社の支払能力に依存</td></tr>
-      <tr><td>検証</td><td>NAV、構成銘柄、指数が公開</td><td>監査資料、銀行・カストディ証明、発行体財務の入手可否が重要</td></tr>
-    </tbody>
-  </table>
-  <div class="footer">類似事例はリスク理解のための比較。ADIF/AIXについて詐欺・破綻と認定する事実を示すものではない。</div>
-</section>
-
-<section class="page" id="checklist">
-  <h2>4. 何を確認すれば「9%が割に合うか」を判断できるか</h2>
-
-  <div class="grid2">
-    <div class="card"><h3><span class="num">1</span>返還義務者</h3><p>元本・分配金を法的に誰が支払う契約なのか。日本法人、合同会社、パナマ法人、AIXのどれか。</p></div>
-    <div class="card"><h3><span class="num">2</span>AIX社債の条件</h3><p>発行体、クーポン、満期、通貨、担保、優先順位、ISIN/証券識別情報、デフォルト条項。</p></div>
-    <div class="card"><h3><span class="num">3</span>資金の実在確認</h3><p>監査済み財務諸表、カストディ/銀行証明、社債保有残高。関連会社作成資料だけでなく独立第三者の確認。</p></div>
-    <div class="card"><h3><span class="num">4</span>50%以上の「実際の比率」</h3><p>50%なのか90%なのかで必要運用利回りが大きく変わる。各期の実績比率と販管費率を見る。</p></div>
-    <div class="card"><h3><span class="num">5</span>解約・償還</h3><p>いつ解約できるか、ゲート/延期条項、手数料、評価方法、支払期限、遅延時の権利。</p></div>
-    <div class="card"><h3><span class="num">6</span>ストレス時</h3><p>AIXの支払いが止まった場合、誰が損失を負担するか。ADIF側に保証・準備金・担保があるか。</p></div>
-  </div>
-
-  <h2 style="margin-top:6mm;">比較の読み方</h2>
-  <table>
-    <thead><tr><th>目的</th><th>確認すべき違い</th></tr></thead>
-    <tbody>
-      <tr><td><b>長期の資産成長</b></td><td>オルカン/S&amp;P500は、リスク源が主に株価と為替でシンプル。NISA非課税の効果も大きい。</td></tr>
-      <tr><td><b>高成長へ集中</b></td><td>FANG+ならNISA内でも集中リスクを取れる。透明な市場価格と換金性を保ったままリスクを上げる選択肢。</td></tr>
-      <tr><td><b>さらにレバレッジ</b></td><td>SPXLはリターン可能性も損失速度も大きい。日次リセットのため長期3倍ではなく、NISA対象外。</td></tr>
-      <tr><td><b>市場と違う収益源</b></td><td>Dubai Investorに意味があるとすれば、株式と異なる収益源・低相関を、追加の信用/換金/法域リスクに見合う形で提供できる場合。その証明資料が核心。</td></tr>
-    </tbody>
-  </table>
-
-  <div class="callout">
-    <b>この比較から言えること：</b><br>
-    Dubai Investorの9%は、オルカンやS&amp;P500より「数字が高いから有利」というタイプの商品ではない。むしろ、上場インデックスではあまり背負わない<b>信用・流動性・運営・クロスボーダー構造</b>を追加で取る対価として9%が十分か、という見方が重要。
-  </div>
-
-  <div class="callout warn"><b>NISAの非課税メリットも忘れない：</b>同じ税引前リターンでも、NISA対象のオルカン/S&amp;P500/FANG+と、NISA外の商品では手取り比較が変わる。</div>
-
-  <div class="footer">投資判断は契約書・目論見書等の正式書面と、自身のリスク許容度を基に行うこと。</div>
-</section>
-
-<section class="page" id="sources">
-  <h2>出典</h2>
-  <p class="small">確認日：2026-09-28。企業自身の説明は「企業側の主張」として扱い、規制当局・指数提供会社・報道等と区別しています。</p>
-
-  <div class="source"><b>[1] ADIF JAPAN Asset Management</b> - 金商登録・事業内容<br>https://www.adif.co.jp/</div>
-  <div class="source"><b>[2] ADIF JAPAN Asset Management, 2026-03-24</b> - 「ADIFグループ投資事業スキームに関する検証レポート」<br>https://dwgkpr9vzw3bh.cloudfront.net/jphf/1774341123011467800.pdf</div>
-  <div class="source"><b>[3] ADIF / AIX, 2026-09-18 / 09-15</b> - AIX運営状況・一部遅延に関する公式声明<br>https://dwgkpr9vzw3bh.cloudfront.net/adif/1789725844089860900.pdf</div>
-  <div class="source"><b>[4] THE GOLD ONLINE フェス 2026 summer</b> - ADIFブース「想定年利9%」<br>https://goldonline.co.jp/fes_2026summer/exhibitors/booth-14/</div>
-  <div class="source"><b>[5] 金融庁</b> - 「合同会社等の社員権の取得勧誘にご注意ください！」<br>https://www.fsa.go.jp/ordinary/chuui/syainnken.html</div>
-  <div class="source"><b>[6] 金融庁</b> - NISA成長投資枠の対象外（高レバレッジ型・非ヘッジ目的デリバティブ等）<br>https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf</div>
-  <div class="source"><b>[7] 三菱UFJアセットマネジメント</b> - eMAXIS Slim比較・10年ベンチマーク（オルカン3.2倍、S&amp;P500 4.2倍）<br>https://emaxis.am.mufg.jp/lp/slim/pr3/</div>
-  <div class="source"><b>[8] MSCI</b> - MSCI ACWI Index（構成銘柄数、リスク、最大ドローダウン）<br>https://www.msci.com/indexes/index/892400/msci-acwi-index</div>
-  <div class="source"><b>[9] S&amp;P Dow Jones Indices</b> - S&amp;P 500（2026-08-31時点の10年価格リターン・リスク）<br>https://www.spglobal.com/spdji/en/indices/equity/sp-500/</div>
-  <div class="source"><b>[10] ICE</b> - NYSE FANG+ Index（10銘柄均等、2014/9-2026/6年率総合収益）<br>https://www.ice.com/equity-derivatives/fangplus</div>
-  <div class="source"><b>[11] 大和アセットマネジメント</b> - iFreeNEXT FANG+インデックス（NISA両枠）<br>https://www.daiwa-am.co.jp/funds/detail/3346/detail_top.html</div>
-  <div class="source"><b>[12] Direxion</b> - SPXL（Daily S&amp;P 500 Bull 3X、10年NAV実績、日次目標の注意）<br>https://www.direxion.com/product/daily-sp-500-bull-bear-3x-etfs</div>
-  <div class="source"><b>[13] U.S. SEC</b> - MRI International asset freeze / Ponzi allegations<br>https://www.sec.gov/newsroom/press-releases/2013-201</div>
-  <div class="source"><b>[14] U.S. Department of Justice, 2019-05-23</b> - MRI International CEO 50-year sentence, $1.5B Ponzi scheme<br>https://www.justice.gov/archives/opa/pr/president-and-ceo-las-vegas-investment-company-sentenced-50-years-prison-running-15-billion</div>
-  <div class="source"><b>[15] Gulf News</b> - Exential Group, Dh1.1bn Ponzi scheme / nearly 7,000 clients<br>https://gulfnews.com/uae/unveiled-anatomy-of-exentials-forex-rip-off-court-orders-company-to-pay-investors-1.2006537</div>
-  <div class="source"><b>[16] Khaleej Times</b> - BlueChip payout halt, 3% monthly return, 18-month lock<br>https://www.khaleejtimes.com/uae/uae-investors-left-in-lurch-as-company-owner-staff-disappear-with-millions</div>
-  <div class="source"><b>[17] U.S. SEC, 2019-04-11</b> - Abraaj Investment Management / fund misappropriation allegations<br>https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24449</div>
-
-  <div class="callout" style="margin-top:5mm;">
-    <b>注：</b>「Dubai Investor」という名称や販売形態には複数の法人・商品説明が関与し得るため、実際に検討している契約書がある場合は、その契約主体・商品名・条項を基準に再確認するのが最も確実です。
-  </div>
-  <div class="footer">End of report</div>
-</section>
-
+  <footer>Investment comparison / updated 2026-09-28</footer>
 </main>
-<script>
-for (const table of document.querySelectorAll("table")) { const heads=[...table.querySelectorAll("thead th")].map(x=>x.textContent.trim()); for (const row of table.querySelectorAll("tbody tr")) [...row.children].forEach((cell,i)=>cell.setAttribute("data-label",heads[i]||"")); }
-for (const el of document.querySelectorAll(".source")) { el.innerHTML = el.innerHTML.replace(/(https:\/\/[^<\s]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'); }
-</script>
 </body>
 </html>
