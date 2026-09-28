@@ -22,7 +22,7 @@ th:last-child,td:last-child{border-right:0}tr:last-child td{border-bottom:0}
 thead th{position:sticky;top:0;z-index:4;background:var(--head);font-weight:800;color:#26364a;white-space:nowrap}
 thead th:first-child{left:0;z-index:6}
 tbody th{position:sticky;left:0;z-index:3;background:#f8fafc;min-width:150px;font-weight:800;color:#26364a}
-.good{color:var(--green);font-weight:800}.bad{color:var(--red);font-weight:800}.warn{color:var(--amber);font-weight:800}.strong{font-weight:800;color:#14213d}.soft{color:var(--muted);font-size:11px}.nowrap{white-space:nowrap}
+.good{color:var(--green);font-weight:800}.bad{color:var(--red);font-weight:800}.warn{color:var(--amber);font-weight:800}.strong{font-weight:800;color:#14213d}.soft{color:var(--muted);font-size:11px}.nowrap{white-space:nowrap}.return-tag{display:inline-block;margin-bottom:5px;padding:2px 7px;border-radius:999px;font-size:10px;font-weight:800;line-height:1.5;background:#edf2f7;color:#4e6074}.return-tag.actual{background:#e7f5ee;color:#176445}.return-tag.mixed{background:#fff2df;color:#87520c}.return-tag.estimate{background:#fdeaea;color:#963737}.return-main{display:block;font-size:14px;font-weight:900;color:#14213d;line-height:1.35;margin-bottom:2px}
 .legend{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}.pill{font-size:11px;font-weight:800;padding:5px 9px;border-radius:999px;background:#edf2f7}.pill.green{background:#e6f6ee;color:#176445}.pill.red{background:#fdeaea;color:#963737}.pill.amber{background:#fff2df;color:#87520c}
 .summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}.summary div{border:1px solid var(--line);border-radius:10px;padding:12px;background:#fafbfd}.summary b{display:block;font-size:12px;color:#526273;margin-bottom:3px}.summary span{font-size:15px;font-weight:800;color:#172b46}
 details{border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 14px;margin-top:10px}summary{cursor:pointer;font-weight:800;padding:12px 0;color:#26364a}.sources{padding:0 0 12px;font-size:12px;color:#506070}.sources div{margin:8px 0}
@@ -60,7 +60,13 @@ footer{font-size:11px;color:#7b8794;margin-top:16px;text-align:center}
           <tr><th>分散度</th><td class="good">非常に高い</td><td class="good">高い</td><td class="warn">低い / 超集中</td><td class="warn">銘柄分散はS&amp;P500だがレバ3倍</td><td class="warn">発行体・運営主体への集中度が高い</td></tr>
           <tr><th>換金性</th><td class="good">高い</td><td class="good">高い</td><td class="good">高い</td><td class="good">高い</td><td class="bad">契約・相手方の支払能力に依存</td></tr>
           <tr><th>価格透明性</th><td class="good">高い</td><td class="good">高い</td><td class="good">高い</td><td class="good">高い</td><td class="warn">上場商品より低い</td></tr>
-          <tr><th>参考リターン</th><td><span class="strong">10年 約3.2倍</span><br><span class="soft">2015/6–2025/6、円換算・配当込ベンチマーク</span></td><td><span class="strong">10年 約4.2倍</span><br><span class="soft">同期間、円換算・配当込ベンチマーク</span></td><td><span class="strong">年率27.41%</span><br><span class="soft">2014/9–2026/6 ICE指数。開始前はバックテスト含む</span></td><td><span class="strong">10年年率29.18%</span><br><span class="soft">2026/8末 SPXL NAV実績</span></td><td><span class="strong">想定年利9%</span><br><span class="soft">シミュレーション値・保証なし</span></td></tr>
+          <tr><th>参考リターン</th>
+            <td><span class="return-tag actual">過去実績（指数）</span><span class="return-main">年率 約12.3%</span><span class="soft">10年 約3.2倍｜2015/6–2025/6<br>円換算・配当込みベンチマーク</span></td>
+            <td><span class="return-tag actual">過去実績（指数）</span><span class="return-main">年率 約15.4%</span><span class="soft">10年 約4.2倍｜2015/6–2025/6<br>円換算・配当込みベンチマーク</span></td>
+            <td><span class="return-tag mixed">実績＋バックテスト</span><span class="return-main">年率 27.41%</span><span class="soft">2014/9–2026/6｜ICE FANG+指数<br>指数算出開始前のバックテストを含む</span></td>
+            <td><span class="return-tag actual">過去実績（ファンド）</span><span class="return-main">年率 29.18%</span><span class="soft">10年年率｜2026/8末時点<br>SPXL NAV実績</span></td>
+            <td><span class="return-tag estimate">想定値（非実績）</span><span class="return-main">年率 9.0%</span><span class="soft">商品側の想定利回り<br>保証なし・市場実績ではない</span></td>
+          </tr>
           <tr><th>大きな損失の出方</th><td>世界株暴落時にNAVが大きく下落</td><td>米国株暴落時にNAVが大きく下落</td><td>成長株の急落で大きく下がりやすい</td><td class="bad">急落＋日次3倍＋経路依存で損失が加速</td><td class="bad">日々の価格変動より、信用イベント・償還遅延・出金停止で表面化し得る</td></tr>
           <tr><th>主な追加リスク</th><td>為替・株式市場</td><td>米国集中・為替</td><td>10社集中・高バリュエーション</td><td>レバレッジ・ボラティリティ減価・日次リセット</td><td>信用・流動性・運営・法域・関連会社・資金フロー</td></tr>
           <tr><th>構造の複雑さ</th><td class="good">低い</td><td class="good">低い</td><td class="good">低い</td><td class="warn">中</td><td class="bad">高い</td></tr>
@@ -69,7 +75,7 @@ footer{font-size:11px;color:#7b8794;margin-top:16px;text-align:center}
       </table>
     </div>
     <div class="legend"><span class="pill green">透明性 / 流動性が高い</span><span class="pill amber">集中・複雑性あり</span><span class="pill red">信用・換金など相手方依存</span></div>
-    <p class="note">※ 期間・指数・通貨・配当処理が異なるため、リターン数値だけの単純比較は不可。過去実績は将来を保証しません。</p>
+    <p class="note">※ オルカン / S&amp;P500は掲載していた10年累積倍率から年率換算（CAGR）した参考値です。FANG+は指数実績にバックテスト期間を含み、SPXLはファンドNAVの過去実績、Dubai Investorは商品側の想定値です。期間・指数・通貨・配当処理が異なるため単純比較はできず、過去実績は将来を保証しません。</p>
   </section>
 
   <section class="section">
